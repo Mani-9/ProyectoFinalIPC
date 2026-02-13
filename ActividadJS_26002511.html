@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signo Sodiacal</title>
+</head>
+
+<body style="text-align: center; padding-top: 200px;">
+
+    <h2 style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ">Calculadora de Signo
+        Zodiacal</h2>
+
+    <button onclick="calcularSigno()"
+        style="padding: 10px 20px; font-size: 16px; border-radius: 25px; background-color: #4CAF50; color: white; border: none; cursor: pointer;">
+        Calcular signo</button>
+
+    <script>
+        function calcularSigno() {
+            let mes = parseInt(prompt("Ingrese su mes de nacimiento (número del 1 al 12):"));
+            let dia = parseInt(prompt("Ingrese su día de nacimiento (número):"));
+            let signo;
+            if (mes == 1) {
+                if (dia <= 20) {
+                    signo = "Capricornio"
+                } else {
+                    signo = "Acuario"
+                }
+            }
+            else if (mes == 2) {
+                if (dia <= 19)
+                    signo = "Acuario"
+                else {
+                    signo = "Piscis"
+                }
+            }
+            else if (mes == 3) {
+                if (dia <= 20)
+                    signo = "Piscis"
+                else {
+                    signo = "Aries"
+                }
+            }
+            else if (mes == 4) {
+                if (dia <= 20)
+                    signo = "Aries"
+                else {
+                    signo = "Tauro"
+                }
+            }
+            else if (mes == 5) {
+                if (dia <= 20)
+                    signo = "Tauro"
+                else {
+                    signo = "Géminis"
+                }
+            }
+            else if (mes == 6) {
+                if (dia <= 20)
+                    signo = "Géminis"
+                else {
+                    signo = "Cáncer"
+                }
+            }
+            else if (mes == 7) {
+                if (dia <= 22)
+                    signo = "Cáncer"
+                else {
+                    signo = "Leo"
+                }
+            }
+            else if (mes == 8) {
+                if (dia <= 23)
+                    signo = "Leo"
+                else {
+                    signo = "Virgo"
+                }
+
+            }
+            else if (mes == 9) {
+                if (dia <= 22)
+                    signo = "Virgo"
+                else {
+                    signo = "Libra"
+                }
+            }
+            else if (mes == 10) {
+                if (dia <= 23)
+                    signo = "Libra"
+                else {
+                    signo = "Escorpio"
+                }
+            }
+            else if (mes == 11) {
+                if (dia <= 22)
+                    signo = "Escorpio"
+                else {
+                    signo = "Sagitario"
+                }
+            }
+            else if (mes == 12) {
+                if (dia <= 21)
+                    signo = "Sagitario"
+                else {
+                    signo = "Capricornio"
+                }
+            }
+            else {
+                signo = "Fecha inválida"
+            }
+            alert("Tu signo zodiacal es: " + signo);
+        }
+    </script>
+
+</body>
+
+</html>
